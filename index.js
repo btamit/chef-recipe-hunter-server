@@ -17,6 +17,7 @@ app.get("/chefs", (req, res) => {
   res.send(chefs);
 });
 
+// Specific id based data 
 app.get("/chefs/:id", (req, res) => {
   const id = req.params.id;
   const selectedChef = chefs.find(d => d.id === id);
