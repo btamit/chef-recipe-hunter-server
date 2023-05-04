@@ -9,7 +9,7 @@ const features = require("./data/features.json");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Chef's Corner is running");
+  res.send("Chef's Corner is running with a different appearance");
 });
 
 app.get("/chefs", (req, res) => {
