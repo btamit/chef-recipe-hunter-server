@@ -12,9 +12,11 @@ app.get("/", (req, res) => {
   res.send("Chef's Corner is running with a different appearance");
 });
 
+// All chefs data 
 app.get("/chefs", (req, res) => {
   res.send(chefs);
 });
+
 app.get("/chefs/:id", (req, res) => {
   const id = req.params.id;
   const selectedChef = chefs.find(d => d.id === id);
