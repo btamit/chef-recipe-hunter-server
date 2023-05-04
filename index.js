@@ -26,5 +26,5 @@ app.get("/features", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Chef's Corner API is running on port:${port}`);
+  console.log(`Chef's Corner is running on port number:${port}`);
 });
